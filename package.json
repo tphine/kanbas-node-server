@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "kanbas-node-server-app",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the Kanbas application",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "author": "Tristan Phan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tphine/kanbas-node-server-app.git"
+  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP",
+    "Web",
+    "Development"
+  ],
+  "bugs": {
+    "url": "https://github.com/tphine/kanbas-node-server-app/issues"
+  },
+  "homepage": "https://github.com/tphine/kanbas-node-server-app#readme",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
