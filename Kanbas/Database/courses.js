@@ -1,4 +1,4 @@
-import image from './react.png';
+const image = '../images/react.png';
 export default [
     {
         _id: "RS101",
