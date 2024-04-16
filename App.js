@@ -11,6 +11,7 @@ import Hello from "./Hello.js"
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 mongoose.connect('mongodb://127.0.0.1:27017/kanbas');
 const app = express();
+app.use(cookieParser())
 app.use(
     session({
         secret: "keyboard cat",
