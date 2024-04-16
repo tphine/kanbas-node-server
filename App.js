@@ -19,13 +19,12 @@ const sessionOptions = {
     proxy: true,
     cookie: {
         sameSite: "none",
-        secure: true,
-        domain: process.env.HTTP_SERVER_DOMAIN,
+        secure: true
     },
 };
 app.use(cors({
     credentials: true,
-    origin: [process.env.FRONTEND_URL, "http://localhost:3000"]
+    origin: process.env.FRONTEND_URL.split(", "),
 }));
 app.use(session(sessionOptions));
 app.use(express.json());
